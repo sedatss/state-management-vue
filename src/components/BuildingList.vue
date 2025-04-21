@@ -40,12 +40,12 @@ const store = useStore<State>();
 
 const buildingSpotIndex = 4;
 
-const selectItem = (index: number) => {
+function selectItem(index: number) : void {
   if (timer.value > 0) return;
   selectedItem.value = selectedItem.value === index ? null : index;
-};
+}
 
-const buildBuilding = () => {
+function buildBuilding() : void {
   store.commit('setTile', {index: buildingSpotIndex, value: underConstructionImage});
 
 
@@ -63,7 +63,7 @@ const buildBuilding = () => {
       }
     }
   }, 1000);
-};
+}
 
 </script>
 

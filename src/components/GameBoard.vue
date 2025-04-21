@@ -26,9 +26,10 @@ import BuildingList from '@/components/BuildingList.vue'
 const store = useStore<State>()
 const board = computed(() => store.getters.getBoard)
 
-const getTilePath = (tile: string): string => {
+function getTilePath(tile: string): string {
   return require(`@/assets/tiles/${tile}`);
 }
+
 </script>
 
 <style scoped>

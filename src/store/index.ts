@@ -16,7 +16,7 @@ export default createStore({
         getBoard: (state) => state.board
     },
     mutations: {
-        setTile(state, payload: { index: number; value: string }) {
+        setTile (state, payload: { index: number; value: string }) : void  {
             state.board[payload.index] = payload.value
         }
     },
