@@ -1,16 +1,15 @@
 <template>
-  <PaPBoard ></PaPBoard>
+  <GameBoard ></GameBoard>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
-import PaPBoard from "@/components/GameBoard.vue";
+import GameBoard from "@/components/GameBoard.vue";
 
 export default defineComponent({
   name: 'App',
   components: {
-    PaPBoard,
+    GameBoard,
   }
 });
 </script>
